@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input placeholder="Ingrese su número de teléfono"[(ngModel)]="telefono"></ion-input>
+  <ion-button color="primary" (click)= enviarMensaje()>Enviar código</ion-button>
+  <ion-input placeholder="Ingrese su código"[(ngModel)]="code"></ion-input>
+  <ion-button color="primary" (click)= verificar()>Verificar</ion-button>
+</ion-content>
